@@ -113,10 +113,10 @@ $(MODULE)_INCPATH += $(cmsis_device_g0_PATH)/Include
 #       up to the developer to specify which HAL elements are needed and how
 #       they are to be configured.
 #
-# By convention we place config files in product/$(PRODUCT)/$(MCU) because
+# By convention we place config files in $(PRODUCT)/$(MCU) because
 # that's an easy pace to leave things like HAL config, linker scripts etc
 
-$(MODULE)_INCPATH += product/$(PRODUCT)/config/$(MCU)
+$(MODULE)_INCPATH += $(PRODUCT)/config/$(MCU)
 #
 # ---------------------------- ------------------------------------------------
 # Set any module level compile time defaults here
