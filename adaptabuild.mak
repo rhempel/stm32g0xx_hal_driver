@@ -98,10 +98,7 @@ SRC_C += Src/stm32g0xx_ll_usb.c
 SRC_C += Src/stm32g0xx_ll_utils.c
 
 # ----------------------------------------------------------------------------
-# Set up the module level source and include paths
-
-$(MODULE)_SRCPATH :=
-$(MODULE)_SRCPATH += $(MODULE_PATH)/Src
+# Set up the module level include path
 
 $(MODULE)_INCPATH :=
 $(MODULE)_INCPATH += $(MODULE_PATH)/Inc
